@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Scaty Editor</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Hareketli mor arkaplan */
+body {
+    background: linear-gradient(270deg, #6a00ff, #b84dff, #4b00c8);
+    background-size: 600% 600%;
+    animation: bgMove 10s ease infinite;
+    color: white;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Büyük resim */
+.preview {
+    width: 95%;
+    max-width: 1200px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    margin-bottom: 40px;
+}
+
+/* İndirme alanı */
+.download-box {
+    background: rgba(0,0,0,0.4);
+    border-radius: 18px;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.download-box h2 {
+    color: #ffd6ff;
+    margin-top: 0;
+}
+
+/* İndir butonu */
+.download-btn {
+    margin: 25px 0;
+    padding: 16px 36px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: white;
+    color: #5a00d6;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #eadbff;
+}
+
+.download-box ol {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Scaty Editor</h1>
+
+    <!-- Büyük görsel -->
+    <img src="resim.png" alt="Scaty Editor" class="preview">
+
+    <!-- İndirme bölümü -->
+    <div class="download-box">
+        <h2>Scaty Editor</h2>
+
+        <!-- İNDİR BUTONU -->
+        <a href="scatyeditor.rar" download>
+            <button class="download-btn">İndir</button>
+        </a>
+
+        <h2>Scaty Editor'ü indirme yöntemi</h2>
+        <ol>
+            <li>İndirin</li>
+            <li>Sağ tık yapın ve <b>Ayıkla</b></li>
+            <li><b>scaty</b> klasörünü açın</li>
+            <li><b>launcher.bat</b> dosyasını açın</li>
+        </ol>
+    </div>
+
+</div>
+
+</body>
+</html>
